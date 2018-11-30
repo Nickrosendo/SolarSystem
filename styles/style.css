@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+body{
+	background-color: black;
+	overflow-y: hidden;
+}
+
+.solarSystem{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15%;
+	background-repeat: no-repeat;
+}
+
+
+/*Sun*/
+
+.sun{}
+
+	.sun img{ width: 150px; height: 150px}
+
+
+/*Mercury*/
+
+.mercury{
+	position: absolute;
+animation: MercuryTranslation  3.5s infinite linear;
+}
+
+	.mercury img{ width: 20px; height: 20px;}
+
+	@keyframes MercuryTranslation {
+			from {
+					transform: rotate(360deg)
+									translate(-95px)
+									rotate(-360deg);
+			}
+			to {
+					transform: rotate(0deg)
+									translate(-95px) 
+									rotate(0deg);
+			}
+	}
+
+
+/*Venus*/
+
+.venus{
+	position: absolute;
+animation: VenusTranslation  7s infinite linear;
+}
+
+	.venus img{ width: 30px; height: 30px;}
+
+	@keyframes VenusTranslation {
+			from {
+					transform: rotate(360deg)
+									translate(-135px)
+									rotate(-360deg);
+			}
+			to {
+					transform: rotate(0deg)
+									translate(-135px) 
+									rotate(0deg);
+			}
+	}
+
+
+/*Earth*/
+.earth{
+	position: absolute;
+animation: EarthTranslation  10s infinite linear;
+}
+
+	.earth img{ width: 35px; height: 35px}
+
+	@keyframes EarthTranslation {
+			from {
+					transform: rotate(360deg)
+									translate(-180px)
+									rotate(-360deg);
+			}
+			to {
+					transform: rotate(0deg)
+									translate(-180px) 
+									rotate(0deg);
+			}
+	}
+
+
+/*Mars*/
+.mars{
+	position: absolute;
+animation: MarsTranslation  12s infinite linear;
+}
+
+	.mars img{ width: 25px; height: 25px}
+
+	@keyframes MarsTranslation {
+			from {
+					transform: rotate(360deg)
+									translate(-225px)
+									rotate(-360deg);
+			}
+			to {
+					transform: rotate(0deg)
+									translate(-225px) 
+									rotate(0deg);
+			}
+	}
+
+
+/*Jupiter*/
+.jupiter{
+	position: absolute;
+animation: JupiterTranslation  15s infinite linear;
+}
+
+	.jupiter img{ width: 60px; height: 60px}
+
+	@keyframes JupiterTranslation {
+			from {
+					transform: rotate(360deg)
+									translate(-300px)
+									rotate(-360deg);
+			}
+			to {
+					transform: rotate(0deg)
+									translate(-300px) 
+									rotate(0deg);
+			}
+	}
+
+/*Saturn*/
+.saturn{
+	position: absolute;
+animation: SaturnTranslation  17s infinite linear;
+}
+
+	.saturn img{ width: 55px; height: 55px}
+
+	@keyframes SaturnTranslation {
+			from {
+					transform: rotate(360deg)
+									translate(-380px)
+									rotate(-360deg);
+			}
+			to {
+					transform: rotate(0deg)
+									translate(-380px) 
+									rotate(0deg);
+			}
+	}
